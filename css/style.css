@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Noto+Serif+JP:wght@200;400&display=swap");
+
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* bodyの設定 */
+body {
+  color: white;
+  background-color: #730909;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 200;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  body {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+/* ヘッダーからメインまでのグループ */
+.coteiner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* コンテナ幅をヘッダーの写真画像・メインから設定した */
+
+/* ヘッダー上部分の背景色 */
+header nav {
+  background-color: #490808;
+}
+/* ヘッダー部分にコンテナ幅は設定してないので、navの背景色はめいいっぱい広がり、色がつく */
+
+/* ヘッダー部分の構成 */
+header nav ul {
+  text-align: center;
+  padding: 29px 0 45px;
+  font-size: 35px;
+  padding-top: 29px;
+  padding-bottom: 50px;
+  max-width: 765px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* メニューリストのフレックスボックスの親ボックス */
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* メニューリストふりがなの設定 */
+header nav ul li {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* メニューリストのストロングタグのテキストの設定 */
+header nav strong {
+  display: block;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+/* レスポンシブ(タブレット)ヘッダー上は表示させないのとロゴの位置変更 */
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+  header h1 img {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+/* ヘッダーｈ１画像部分の設定 */
+header h1 {
+  padding-top: 51px;
+  padding-bottom: 271px;
+  padding-left: 62px;
+  margin-bottom: -102px;
+  background-image: url(../img/ojousan.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  header h1 {
+    height: 561px;
+    padding-top: 37px;
+    padding: 32px;
+    background-image: url(../img/767s.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* 宿泊予約ボタンをフレックスボックスにする */
+/* 宿泊予約ボタン外枠 */
+header div.yoyaku {
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  background: rgb(240, 212, 70);
+  background: linear-gradient(90deg, rgba(240, 212, 70, 1) 0%, rgba(244, 223, 115, 1) 11%, rgba(253, 233, 134, 1) 17%, rgba(255, 246, 158, 1) 21%, rgba(255, 247, 172, 1) 24%, rgba(255, 249, 193, 1) 28%, rgba(255, 247, 172, 1) 34%, rgba(242, 214, 74, 1) 50%, rgba(233, 200, 41, 1) 75%, rgba(220, 187, 24, 1) 100%);
+  border: 5px solid #ebad37;
+  border-radius: 5px;
+  margin-bottom: 52px;
+}
+
+/* テキスト宿泊予約 */
+header div.yoyaku div.syukuhaku {
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+/* テキスト上 */
+header div.yoyaku div.check {
+  font-size: 25px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+}
+
+/* テキスト下 */
+header div.yoyaku div.check p.checkin {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 検索ボタン */
+header div.yoyaku div.kensaku {
+  background-color: #000;
+  color: #fff;
+  padding: 11px 26px;
+  margin-right: 50px;
+}
+
+/* 矢印の画像 */
+header div.yoyaku div.check p.checkin img {
+  margin-left: -3px;
+}
+
+/* 予約確認・宿泊プラン一覧 */
+header div.yoyaku div.itiran {
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 44px;
+}
+header div.yoyaku div.itiran p.kakunin {
+  border: 1px solid #cb9836;
+  padding: 7px 9px 8px;
+  margin-bottom: 5px;
+}
+header div.yoyaku div.itiran p.pranitiran {
+  border: 1px solid #cb9836;
+  padding: 7px 9px 8px;
+}
+
+/* タブレットレスポンシブ */
+/* 非表示にして、固定ボタンに変更予定 */
+@media (max-width: 991px) {
+  header div.yoyaku {
+    display: none;
+  }
+}
+
+/* ｈ２（背景画像＋縦書き） */
+main section h2.anata {
+  font-size: 20px;
+  writing-mode: vertical-rl;
+  text-align: left;
+  padding-top: 47px;
+  padding-left: 283px;
+  padding-bottom: 125px;
+  margin-top: 53px;
+}
+/* ｈ２全体を文字を縦書きに設定して、左ぞろえにしたうえに、内側上下左余白をつける */
+
+/* ｈ２の２行目 */
+main section h2.anata span {
+  padding-top: 2em;
+}
+/* em＝文字サイズ文移動させる */
+/* span＝他にふさわしい範囲がないときにつけるインライン要素 */
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section h2.anata {
+    margin-top: 200px;
+  }
+}
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section h2.anata {
+    font-size: 30px;
+    line-height: 35px;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    padding-left: 7.9%;
+    padding-right: 7.9%;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    margin-top: 160px;
+  }
+  main section h2.anata span {
+    padding-top: 5px;
+  }
+}
+
+/* メインセクション（背景画像） */
+main section.fancy {
+  font-size: 20px;
+  text-align: center;
+  background-image: url(../img/hidariue.png), url(../img/ishinageport\ 1.jpg), url(../img/hidarisita.png), url(../img/migisita.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom;
+  background-color: #730909;
+  background-blend-mode: screen, normal, screen, screen;
+}
+/* background-blend-modeでスクリーンを掛ける時は背景色を設定する。 */
+/* 背景画像はセクションごとまとめて設定する */
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.fancy {
+    background-image: url(../img/hidariue.png), url(../img/ishinageport\ 1.jpg), url(../img/topmigiue.png);
+    background-repeat: no-repeat;
+    background-position: left top, center top 260px, right top;
+    background-color: #730909;
+    background-blend-mode: screen, normal, screen;
+    padding-bottom: 201px;
+  }
+}
+
+/* メインセクションの概要テキスト */
+main section div.gaiyou {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+/* メインセクションpタグの強調文字 */
+main section p.gaiyou strong {
+  font-size: 23px;
+  line-height: 23px;
+}
+
+/* スマホ(横)レスポンシブ */
+@media (max-width: 767px) {
+  main section div.gaiyou {
+    padding-bottom: 38px;
+    padding-left: 2.6%;
+    padding-right: 1.3%;
+    padding-bottom: 240px;
+  }
+}
+/* スマホ（縦）レスポンシブ  */
+/* テキストは改行を解除して、両端ぞろえにすることで見やすくした */
+@media (max-width: 575px) {
+  main section div.gaiyou {
+    text-align: justify;
+  }
+  main section div.gaiyou br {
+    display: none;
+  }
+  main section.fancy {
+    background-image: url(../img/smart-left-bara.png), url(../img/smart-right-bara.png), url(../img/ishinageport\ 1.jpg);
+    background-position: left top, right top, center bottom;
+    background-size: 72px 77px, 78px 74px, 100%;
+
+    background-color: #730909;
+    background-blend-mode: screen, screen, normal;
+  }
+}
+
+/* 中見出しタイトルを一括で設定 */
+main section h2 {
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 100px;
+  padding-bottom: 65px;
+  text-align: center;
+}
+
+main section
+/* h2 class="kusa"設定 */
+main section h2.kusa {
+  background-image: url(../img/PCleaf-left\ 1.png), url(../img/PCleaf-right\ 1.png);
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-position: right top 100px, left top 100px;
+  background-color: #730909;
+  background-blend-mode: screen, screen;
+  margin-left: 27.7%;
+  margin-right: 27.8%;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section h2.kusa {
+    margin-left: 16.7%;
+    margin-right: 17.8%;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section h2 {
+    font-size: 25px;
+    line-height: 27px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  main section h2.kusa {
+    background-image: url(../img/smart-leaf-left\ 1.png), url(../img/smart-leaf-right\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right top 80px, left top 80px;
+    background-color: #730909;
+    background-blend-mode: screen, screen;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section h2.kusa {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ  */
+@media (max-width: 575px) {
+  main section h2 {
+    font-size: 20px;
+    padding-bottom: 58px;
+  }
+  main section h2.kusa {
+    background-image: url(../img/smart-leaf-left\ 1.png), url(../img/smart-leaf-right\ 1.png);
+    background-position: right top 100px, left top 100px;
+    background-color: #730909;
+    background-blend-mode: screen, screen;
+  }
+}
+
+/* メインセクションｈ３ */
+main section.pickup h3 {
+  font-size: 35px;
+  line-height: 40px;
+  padding-bottom: 66px;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.pickup h3 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+/* 一覧ボタン */
+main section.pickup div.ivent p.itiran {
+  font-size: 25px;
+  line-height: 30px;
+  max-width: 131px;
+}
+
+/* ｈ３画像余白 */
+main section div.ivent p.aiilust {
+  padding-bottom: 68px;
+}
+
+/* リンクタグ設定 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ｈ３プラン名 */
+main section.pickup div.ivent p.puran {
+  font-size: 35px;
+  line-height: 40px;
+  padding-bottom: 38px;
+  text-decoration: underline;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.pickup div.ivent p.puran {
+    font-size: 30px;
+    line-height: 32px;
+    padding-left: 7.1%;
+    padding-bottom: 0px;
+  }
+  main section.pickup div.pikku div.ivent p.aiilust {
+    width: 488px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* プラン名ホバー時の設定 */
+main section.pickup div.ivent p.puran a:hover {
+  opacity: 0.7;
+}
+
+/* ｈ３日付 */
+main section.pickup div.ivent p.day {
+  font-size: 25px;
+  line-height: 30px;
+  background-image: url(../img/kaisaityu.png);
+  background-repeat: no-repeat;
+  background-position: left 66px bottom 136px;
+  padding-bottom: 180px;
+  padding-left: 51px;
+}
+
+@media (max-width: 767px) {
+  main section.pickup div.ivent p.day {
+    padding-left: 8.3%;
+    background-image: url(../img/kaisaityu.png);
+    background-repeat: no-repeat;
+    background-position: left 66px top 1.5em;
+    padding-bottom: 40px;
+  }
+}
+
+/* h3横並びフレックスボックス */
+main section.pickup div.pikku {
+  display: flex;
+  column-gap: 8.4%;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.pickup div.pikku {
+    display: unset;
+  }
+}
+
+/* ｈ３と一覧ボタンのフレックスボックス */
+main section div.pikku div.ivent div.ue {
+  display: flex;
+}
+
+/* 一覧ボタンの基準の配置設定 */
+main section.pickup div.pikku div.ivent {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  main section.pickup div.pikku div.ivent {
+    padding-top: 80px;
+  }
+}
+
+/* 一覧ボタンの基準の配置 */
+main section.pickup div.pikku div.ivent div.ue p.itiran {
+  position: absolute;
+  top: 0;
+  right: 55px;
+}
+
+@media (max-width: 767px) {
+  main section.pickup div.pikku div.ivent div.ue p.itiran {
+    top: 120px;
+    left: 60px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 767px) {
+  main section.pickup div.pikku div.ivent div.ue h3.ibe {
+    padding-left: 7.1%;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main section.pickup div.pikku {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+/* main section.aboutの設定 */
+main section.about {
+  background-image: url(../img/aboutbara.png), url(../img/migiue.png), url(../img/hidarisita.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom;
+  background-color: #730909;
+  background-blend-mode: screen, screen, screen;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  main section.about {
+    margin-bottom: 40px;
+  }
+}
+/* アバウトのテキストと背景画像設定  */
+main section.about h2.syoukai {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  margin-top: 70px;
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+
+/* ABOUTのspanタグの設定 */
+main section.about h2.syoukai span {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* スマホ（横）のレスポンシブ */
+@media (max-width: 767px) {
+  main section.about h2.syoukai {
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+}
+/* ABOUTの<p class="set">の設定 */
+main section.about p.set {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+/* h3の設定 */
+main section.about div.naiyou h3 {
+  font-size: 35px;
+  line-height: 40px;
+  padding-bottom: 31px;
+  text-align: left;
+}
+
+/* <p class="kobun">の設定 */
+main section.about div.naiyou p.kobun {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+  padding-bottom: 116px;
+}
+
+@media (max-width: 767px) {
+  main section.about div.naiyou p.kobun {
+    padding-bottom: 50px;
+  }
+}
+
+/* <div class="naiyou">のFlexBoxの設定 */
+main section.about div.naiyou {
+  display: flex;
+}
+
+/* <div class="naiyou">のアイテムの設定 */
+main section.about div.naiyou p.maru {
+  column-gap: 20px;
+  flex-basis: 99px;
+  margin-right: 21px;
+}
+
+/* それぞれの文章の設定 */
+main section.about div.naiyou div.daibun {
+  flex: auto;
+  margin-right: 103px;
+}
+
+main section.about div.naiyou p.syasin {
+  flex-basis: 391px;
+  text-align: center;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.about div.naiyou p.syasin {
+    padding-bottom: 50px;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+/* フレックスボックスを折り返しを設定、画像の比率を100％にして行を折り返す、
+文章のフレックスオート、外側余白を解除することでトップアイコンと文章が一行になる。 */
+@media (max-width: 767px) {
+  main section.about div.naiyou {
+    flex-wrap: wrap;
+  }
+  main section.about div.naiyou p.syasin {
+    flex-basis: 100%;
+  }
+  main section.about div.naiyou div.daibun {
+    flex: unset;
+    margin-right: unset;
+  }
+}
+
+main section.about div.naiyou p.dress {
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 65px;
+}
+
+/* セクション"mansion"の設定 */
+main section.mansion {
+  background-image: url(../img/hidariue.png), url(../img/migiue.png), url(../img/hidarisita.png), url(../img/migisita.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom;
+  background-color: #730909;
+  background-blend-mode: screen, screen, screen, screen;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.mansion {
+    padding-bottom: 150px;
+  }
+}
+
+/* h2のPLANの設定 */
+main section h2.goutei {
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 83px;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section h2.goutei {
+    padding-top: 30px;
+  }
+}
+
+/* PLANのpタグ */
+main section p.oshiro {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* スマホ（横）レスポンシブ */
+/* フォントサイズ、行間の変更・文章の左右余白の減少・ｂｒタグの解除 */
+@media (max-width: 767px) {
+  main section p.oshiro {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  main section p.oshiro {
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+  main section p.oshiro br {
+    display: none;
+  }
+}
+
+/* 画像を横並びに表示する */
+/* 下位置の背景の余白 */
+/* マテリアルアイコンの絶対配置の基準位置 */
+main section.mansion div.house {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 140px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.mansion div.house {
+    display: unset;
+  }
+  main section.mansion div.house p.oshiro {
+    text-align: center;
+  }
+  main section.mansion div.house p.ie {
+    text-align: center;
+  }
+}
+/* プラン詳細ボタン */
+main section.mansion div.house p.syousai a {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 25px 83px 23px 85px;
+
+  border: 1px solid #fff;
+  background-color: #730909;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 12px;
+  left: 35.8%;
+  cursor: pointer;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main section.mansion div.house p.syousai a {
+    bottom: -116px;
+    left: 186px;
+  }
+}
+/* プラン詳細ホバー */
+main section.mansion div.house p.syousai a:hover {
+  color: #000;
+  background-color: rgba(241, 178, 60, 0.514);
+}
+
+/* マテリアルアイコン */
+[class^="material-"] {
+  font-size: inherit;
+  vertical-align: -0.1em;
+}
+
+/* フッターの設定 */
+footer {
+  color: #000;
+  font-size: 25px;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  background: rgb(241, 190, 90);
+  background: linear-gradient(90deg, rgba(241, 190, 90, 1) 0%, rgba(254, 214, 132, 1) 24%, rgba(237, 215, 168, 1) 40%, rgba(241, 225, 194, 1) 50%, rgba(237, 215, 168, 1) 62%, rgba(234, 200, 127, 1) 73%, rgba(235, 186, 91, 1) 81%, rgba(236, 179, 64, 1) 89%, rgba(223, 158, 34, 1) 100%);
+}
+
+/* フッターのテキストの設定 */
+footer div.juusyo {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  footer {
+    margin-top: 40px;
+  }
+  footer div.juusyo {
+    padding-left: 2.8%;
+    padding-right: 2.8%;
+  }
+}
+
+/* ページトップの固定配置 */
+footer p.pagetop {
+  position: fixed;
+  right: 12px;
+  bottom: 9px;
+}
+
+/* マテリアルアイコンの絶対配置 */
+main section.mansion div.house p.syousai a span.material-symbols-outlined {
+  position: absolute;
+  bottom: 26px;
+  right: 20px;
+}
