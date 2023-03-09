@@ -1,0 +1,129 @@
+@import url(common.css);
+
+/* h1設定 */
+main article h1 {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding-bottom: 172px;
+}
+
+/* div class="plan"の背景画像の設定 */
+main article div.plan {
+  background-image: url(../img/PCleaf-left\ 1.png), url(../img/PCleaf-right\ 1.png), url(../img/kusaue.png), url(../img/hidariue.png), url(../img/topmigiue.png), url(../img/kusaue.png);
+  background-repeat: no-repeat;
+  background-position: right 170px top, left 170px top, center top 110px, left 0px top 210px, right 0px top 210px, center bottom 115px;
+  background-color: #730909;
+  background-blend-mode: screen, screen, screen, screen, screen, screen;
+  padding-bottom: 120px;
+}
+
+/* h2の設定 */
+main article div.plan section h2 {
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* h2テキストの設定 */
+main article div.plan section p {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* h3flexbox設定 */
+main article div.plan div.box1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+/* h3アイテム設定 */
+main article div.plan div.box1 section.hako {
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+  flex-basis: 368px;
+  background-image: url(../img/kabegami.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+}
+
+/* section class="hako"の設定 */
+main article div.plan div.box1 section.hako div.nakami h3 {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 18px;
+}
+
+/* p class="sen"の設定 */
+main article div.plan div.box1 section.hako div.nakami p.sen {
+  padding-bottom: 0;
+  margin-top: -38px;
+}
+
+/* p class="setumeiの設定 */
+main article div.plan div.box1 section.hako div.nakami p.setumei {
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 22px;
+  text-align: justify;
+  padding-left: 53px;
+  padding-right: 52px;
+}
+
+/* div class="nakami"の設定 */
+main article div.plan div.box1 section.hako div.nakami {
+  padding-bottom: 25px;
+}
+
+/* p class="annai"の設定 */
+main article div.plan div.box1 section.hako p.annai a {
+  background-color: #f9de53;
+  font-size: 20px;
+  line-height: 67px;
+  text-align: center;
+  display: block;
+  padding: 24px, 0;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+/* リンク右向き矢印設定 */
+main article div.plan div.box1 section.hako p.annai a img {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+}
+
+/* セクション２のh2の設定 */
+main article section.gray h2.name {
+  color: black;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 54px;
+}
+
+/* セクション２のh2の設定 */
+main article section.gray div.cube {
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* section class="gray"の設定 */
+main article section.gray {
+  background-color: #c9c9c9;
+  margin-top: -85px;
+  margin-bottom: 58px;
+}
