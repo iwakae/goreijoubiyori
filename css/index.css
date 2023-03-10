@@ -22,7 +22,7 @@ main section h2.anata span {
 /* タブレットレスポンシブ */
 @media (max-width: 991px) {
   main section h2.anata {
-    margin-top: 200px;
+    margin-top: 60px;
   }
 }
 /* スマホ（横）レスポンシブ */
@@ -99,7 +99,7 @@ main section p.gaiyou strong {
     padding-bottom: 38px;
     padding-left: 2.6%;
     padding-right: 1.3%;
-    padding-bottom: 240px;
+    padding-bottom: 140px;
   }
 }
 
@@ -170,7 +170,7 @@ main section h2.kusa {
     line-height: 32px;
     background-image: url(../img/smart-leaf-left\ 1.png), url(../img/smart-leaf-right\ 1.png);
     background-repeat: no-repeat;
-    background-position: right top 80px, left top 80px;
+    background-position: right top 5px, left top 5px;
     background-color: #730909;
     background-blend-mode: screen, screen;
   }
@@ -254,6 +254,14 @@ main section.pickup div.ivent p.puran {
   line-height: 40px;
   padding-bottom: 38px;
   text-decoration: underline;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section.pickup div.ivent p.puran {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 /* スマホ（横）レスポンシブ */
@@ -557,13 +565,6 @@ main section.about div.naiyou picture {
   }
 }
 
-/* スマホ（縦）レスポンシブ */
-/* アイコンを背景画像に変更する */
-@media (max-width: 575px) {
-  main section.about div.naiyou p.maru {
-  }
-}
-
 /* それぞれの文章の設定 */
 main section.about div.naiyou div.daibun {
   flex: auto;
@@ -577,7 +578,7 @@ main section.about div.naiyou p.syasin {
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
   main section.about div.naiyou p.syasin {
-    padding-bottom: 170px;
+    padding-bottom: 75px;
   }
 }
 

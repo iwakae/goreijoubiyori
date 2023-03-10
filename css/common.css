@@ -96,6 +96,12 @@ header nav {
 }
 /* ヘッダー部分にコンテナ幅は設定してないので、navの背景色はめいいっぱい広がり、色がつく */
 
+@media (max-width: 991px) {
+  header nav {
+    height: 120px;
+  }
+}
+
 /* ヘッダー部分の構成 */
 header nav ul {
   text-align: center;
@@ -108,10 +114,24 @@ header nav ul {
   margin-right: auto;
 }
 
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  header nav ul {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
 /* メニューリストのフレックスボックスの親ボックス */
 header nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  header nav ul {
+    display: block;
+  }
 }
 
 /* メニューリストふりがなの設定 */
@@ -127,6 +147,14 @@ header nav strong {
   line-height: 40px;
 }
 
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  header nav strong {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
 /* メニューリストホバー時の設定 */
 header nav li a:hover {
   text-decoration: underline;
@@ -140,14 +168,19 @@ header nav ul li a.active {
 
 /* レスポンシブ(タブレット)ヘッダー上は表示させないのとロゴの位置変更 */
 @media (max-width: 991px) {
-  header nav {
-    display: none;
-  }
   header h1 img {
     margin-top: 0px;
     margin-left: 0px;
   }
 }
+
+/* モバイル表示のときはメニューの表示ページの太字を解除 */
+@media (max-width: 767px) {
+  header nav ul li a.active {
+    font-weight: 200;
+  }
+}
+
 /* ヘッダーｈ１画像部分の設定 */
 header h1 {
   padding-top: 51px;
@@ -182,7 +215,7 @@ header h1 {
 /* 宿泊予約ボタン外枠 */
 header div.yoyaku {
   color: #000;
-  font-size: 30px;
+
   line-height: 30px;
   display: flex;
   align-items: center;
@@ -195,17 +228,36 @@ header div.yoyaku {
 
 /* テキスト宿泊予約 */
 header div.yoyaku div.syukuhaku {
-  padding-right: 45px;
-  padding-left: 45px;
+  font-size: 30px;
+
+  padding-right: 3.14%;
+  padding-left: 3.14%;
   padding-top: 39px;
   padding-bottom: 39px;
+  white-space: nowrap;
+}
+
+/* フォントサイズ変更 */
+@media (max-width: 1429px) {
+  header div.yoyaku div.syukuhaku {
+    font-size: 2.28vw;
+  }
 }
 
 /* テキスト上 */
 header div.yoyaku div.check {
   font-size: 25px;
-  padding-right: 18px;
+
+  padding-right: 1.25%;
   padding-bottom: 12px;
+  white-space: nowrap;
+}
+
+/* フォントサイズ変更 */
+@media (max-width: 1429px) {
+  header div.yoyaku div.check {
+    font-size: 2.02vw;
+  }
 }
 
 /* テキスト下 */
@@ -213,8 +265,8 @@ header div.yoyaku div.check p.checkin {
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 6px;
+  padding-left: 3%;
+  padding-right: 1%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -224,7 +276,8 @@ header div.yoyaku div.kensaku {
   background-color: #000;
   color: #fff;
   padding: 11px 26px;
-  margin-right: 50px;
+  margin-right: 3.49%;
+  white-space: nowrap;
 }
 
 /* 矢印の画像 */
@@ -235,9 +288,19 @@ header div.yoyaku div.check p.checkin img {
 /* 予約確認・宿泊プラン一覧 */
 header div.yoyaku div.itiran {
   font-size: 20px;
+  font-size: 1.98vw;
   line-height: 25px;
   margin-right: 44px;
+  white-space: nowrap;
 }
+
+/* フォントサイズ変更 */
+@media (max-width: 1429px) {
+  header div.yoyaku div.itiran {
+    font-size: 1.98vw;
+  }
+}
+
 header div.yoyaku div.itiran p.kakunin {
   border: 1px solid #cb9836;
   padding: 7px 9px 8px;
@@ -250,7 +313,7 @@ header div.yoyaku div.itiran p.pranitiran {
 
 /* タブレットレスポンシブ */
 /* 非表示にして、固定ボタンに変更予定 */
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   header div.yoyaku {
     display: none;
   }
@@ -271,6 +334,14 @@ footer {
   padding-bottom: 23px;
   background: rgb(241, 190, 90);
   background: linear-gradient(90deg, rgba(241, 190, 90, 1) 0%, rgba(254, 214, 132, 1) 24%, rgba(237, 215, 168, 1) 40%, rgba(241, 225, 194, 1) 50%, rgba(237, 215, 168, 1) 62%, rgba(234, 200, 127, 1) 73%, rgba(235, 186, 91, 1) 81%, rgba(236, 179, 64, 1) 89%, rgba(223, 158, 34, 1) 100%);
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  footer {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* スマホ（縦）レスポンシブ */
@@ -355,7 +426,7 @@ section.mansion ul {
   margin-right: auto;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .hmenu {
     display: flex;
   }
@@ -367,51 +438,33 @@ section.mansion ul {
 }
 
 /* ハンバーガーメニュー用のnav */
-nav {
-  width: 0px;
-  height: calc(100% -90%);
-  box-shadow: 6px 0 6px;
-  top: 90px;
-  right: 0;
-}
+/* メニューリスト（左右スライド） */
+/* メニューをクリックしたあとの状態 */
+/* メニューリストのテキストの設定 */
 
-nav li {
-  padding-left: 20px;
-  text-align: left;
-}
-
-@media (min-width: 575px) {
+@media (max-width: 767px) {
   nav {
-    display: block !important;
+    width: 0px;
+    height: calc(100% - 90px);
+    border: none;
+    box-shadow: 6px 0 6px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .hmenu.close + nav {
+    width: 200px;
+  }
+  nav li {
+    padding-left: 20px;
+    text-align: left;
   }
 }
 
-/* メニューリスト（左右スライド） */
-nav {
-  width: 0px;
-  height: calc(100% - 90px);
-  border: none;
-  box-shadow: 6px 0 6px;
-  position: absolute;
-  top: 90px;
-  right: 0;
-  transition: 0.5s;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-
-/* メニューをクリックしたあとの状態 */
-.hmenu.close + nav {
-  width: 200px;
-}
-
-/* メニューリストのテキストの設定 */
-nav li {
-  padding-left: 20px;
-  text-align: left;
-}
-
-@media (min-width: 575px) {
+@media (min-width: 767px) {
   nav {
     display: block !important;
   }
