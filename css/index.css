@@ -442,6 +442,7 @@ main section.about {
 /* アバウトのテキストと背景画像設定  */
 main section.about h2.syoukai {
   font-size: 40px;
+  font-weight: 400;
   line-height: 40px;
   text-align: center;
 
@@ -453,6 +454,7 @@ main section.about h2.syoukai {
 /* ABOUTのspanタグの設定 */
 main section.about h2.syoukai span {
   font-size: 25px;
+  font-weight: 200;
   line-height: 25px;
 }
 
@@ -520,9 +522,18 @@ main section.about p.set {
 /* h3の設定 */
 main section.about div.naiyou h3 {
   font-size: 35px;
+  font-weight: 400;
   line-height: 40px;
   padding-bottom: 31px;
   text-align: left;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section.about div.naiyou h3 {
+    font-size: 3.2vw;
+    text-align: justify;
+  }
 }
 
 /* スマホ（横）レスポンシブ */
@@ -549,9 +560,17 @@ main section.about div.naiyou p.kobun {
   padding-bottom: 116px;
 }
 
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section.about div.naiyou p.kobun {
+    font-size: 2.75vw;
+  }
+}
+
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
   main section.about div.naiyou p.kobun {
+    text-align: justify;
     padding-bottom: 50px;
   }
 }
@@ -574,6 +593,7 @@ main section.about div.naiyou picture {
   flex-basis: 90px;
   margin-right: 15px;
 }
+
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
   main section.about div.naiyou picture {
@@ -584,11 +604,11 @@ main section.about div.naiyou picture {
 
 /* それぞれの文章の設定 */
 main section.about div.naiyou div.daibun {
-  flex: auto;
+  flex: 1;
 }
 
 main section.about div.naiyou p.syasin {
-  flex-basis: 390px;
+  flex: 1;
   text-align: center;
 }
 
@@ -641,6 +661,13 @@ main section.about div.naiyou p.dress {
   padding-bottom: 65px;
 }
 
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section.about div.naiyou p.dress {
+    font-size: 2.75vw;
+  }
+}
+
 /* スマホ（縦）レスポンシブ */
 @media (max-width: 575px) {
   main section.about div.naiyou p.dress {
@@ -679,6 +706,7 @@ main section.mansion {
 /* h2のPLANの設定 */
 main section h2.goutei {
   font-size: 40px;
+  font-weight: 400;
   line-height: 40px;
   padding-top: 0;
   padding-bottom: 83px;
@@ -711,6 +739,14 @@ main section p.oshiro {
   line-height: 30px;
   text-align: center;
   padding-bottom: 40px;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main section p.oshiro {
+    /* padding-left: 20%;
+    padding-right: 20%; */
+  }
 }
 
 /* スマホ（横）レスポンシブ */

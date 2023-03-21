@@ -216,15 +216,15 @@ header div.yoyaku {
 /* テキスト宿泊予約 */
 header div.yoyaku div.syukuhaku {
   font-size: 30px;
-  padding-right: 3.14%;
-  padding-left: 3.14%;
+  padding-right: 2.14%;
+  padding-left: 2.14%;
   padding-top: 39px;
   padding-bottom: 39px;
   white-space: nowrap;
 }
 
 /* フォントサイズ変更 */
-@media (max-width: 1429px) {
+@media (min-width: 768px) {
   header div.yoyaku div.syukuhaku {
     font-size: 2.28vw;
   }
@@ -240,7 +240,7 @@ header div.yoyaku div.check {
 }
 
 /* フォントサイズ変更 */
-@media (max-width: 1429px) {
+@media (min-width: 768px) {
   header div.yoyaku div.check {
     font-size: 2.02vw;
   }
@@ -282,31 +282,20 @@ header div.yoyaku div.check p.checkin img {
 
 /* 予約確認・宿泊プラン一覧 */
 header div.yoyaku div.itiran {
-  font-size: 20px;
-  font-size: 1.98vw;
+  font-size: 1.95vw;
   line-height: 25px;
   margin-right: 44px;
   white-space: nowrap;
 }
 
-/* フォントサイズ変更 */
-@media (max-width: 1429px) {
-  header div.yoyaku div.itiran {
-    font-size: 1.98vw;
-  }
-}
-
-header div.yoyaku div.itiran p.kakunin {
+header div.yoyaku div.itiran p.kakunin,
+header div.yoyaku div.itiran p.pranitiran {
   border: 1px solid #cb9836;
   padding: 7px 9px 8px;
   margin-bottom: 5px;
+
   cursor: pointer;
   transition: 0.5s;
-}
-header div.yoyaku div.itiran p.pranitiran {
-  border: 1px solid #cb9836;
-  padding: 5%;
-  cursor: pointer;
 }
 
 header div.yoyaku div.itiran p.kakunin:hover,
