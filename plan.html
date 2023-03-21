@@ -29,10 +29,10 @@
 
         <nav class="backcolor">
             <ul>
-                <li><strong>HOME</strong>御令嬢日和とは</li>
-                <li><strong>PLAN</strong>プラン内容</li>
-                <li><strong>STAFF</strong>スタッフ</li>
-                <li><strong>OPTION</strong>オプション</li>
+                <li> <a href="index.html"><strong>HOME</strong>御令嬢日和とは</a></li>
+                <li><a href="plan.html"><strong>PLAN</strong>プラン内容</a></li>
+                <li><a href="#"><strong>STAFF</strong>スタッフ</a></li>
+                <li><a href="contact.html"><strong>OPTION</strong>オプション</a></li>
             </ul>
         </nav>
 
@@ -55,22 +55,43 @@
 
             <div class="check">
                 <p>チェックイン</p>
-                <p class="checkin">2023/3/31<img src="img/down-arow.png" alt=""></p>
+                <p class="checkin"><select>
+                        <option value="23.03.09">
+                            23.03.09
+                        </option>
+                        <option value="23.03.10">
+                            23.03.10
+                        </option>
+                        <option value="23.03.11">23.03.11</option>
+                    </select></p>
             </div>
 
             <div class="check">
                 <p>宿泊数</p>
-                <p class="checkin">1泊<img src="img/down-arow.png" alt=""></p>
+                <p class="checkin"><select name="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    泊</p>
             </div>
 
             <div class="check">
                 <p>人数</p>
-                <p class="checkin">１人<img src="img/down-arow.png" alt=""></p>
+                <p class="checkin"><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    人</p>
             </div>
 
             <div class="check">
                 <p>部屋数</p>
-                <p class="checkin">１部屋<img src="img/down-arow.png" alt=""></p>
+                <p class="checkin">１<select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+
+                    </select>
+                    部屋</p>
             </div>
 
             <div class="kensaku">
@@ -89,11 +110,11 @@
         <article>
             <div class="plan">
                 <h1>PLAN・PRICE</h1>
-                <section>
+                <section class="sumaho">
                     <h2>
                         PLAN
                     </h2>
-                    <p>御令嬢日和では、<br>
+                    <p class="honbun">御令嬢日和では、<br>
                         ご来訪なさった御令嬢方に優雅に寛いでいただくために<br>
                         一般お嬢様向けの豪邸や、欧風貴族の城など様々な内装を<br>
                         ご用意しております。<br>
@@ -103,53 +124,68 @@
 
                 <div class="box1">
                     <section class="hako">
-                        <div class="nakami">
-                            <h3>
-                                一般お嬢様プラン
-                            </h3>
+
+                        <h3>
+                            一般お嬢様プラン
+                        </h3>
 
 
-                            <p class="setumei">
-                                一般家庭向けの豪邸をモチーフとした洋風の個室となります。お庭には温水プールやテラスで休憩できます。
-                            </p>
-                            <p class="kadomaru">
+                        <p class="setumei">
+                            一般家庭向けの豪邸をモチーフとした洋風の個室となります。お庭には温水プールやテラスで休憩できます。
+                        </p>
+                        <p class="kadomaru">
+                            <picture>
+                                <source media="(max-width: 575px)" srcset="./img/s-goutei.jpg">
                                 <img src="./img/sikaku-goutei.png" alt="">
-                            </p>
-                        </div>
+                            </picture>
+
+                        </p>
+
+
+
+                    </section>
+
+                    <section class="hako">
+
+                        <h3>
+                            欧風貴族プラン
+                        </h3>
+
+                        <p class="setumei">
+                            約150年前に造られたヨーロッパのお城。大理石の床やシャンデリアで飾られた豪華な大居室になっています。
+                        </p>
+                        <p class="kadomaru">
+                            <img src="img/sikakuishiro.png" alt="">
+                        </p>
+
+
+
+                    </section>
+
+                    <section class="hako">
+
+                        <h3>
+                            その他プラン
+                        </h3>
+
+                        <p class="setumei">
+                            タワーマンション、中華風の古城での滞在や、オプションとして、バースデーサプライズなども可能です。
+                        </p>
+                        <p class="kadomaru">
+                            <img src="./img/sikaku-goutei.png" alt="">
+                        </p>
+                    </section>
+
+                    <section class="kiiro">
+
                         <p class="annai"><a href="#"><img src="./img/right-icon.svg" alt=""> 客室備品・アメニティー</a></p>
-
                     </section>
-
-                    <section class="hako">
-                        <div class="nakami">
-                            <h3>
-                                欧風貴族プラン
-                            </h3>
-
-                            <p class="setumei">
-                                約150年前に造られたヨーロッパのお城。大理石の床やシャンデリアで飾られた豪華な大居室になっています。
-                            </p>
-                            <p class="kadomaru">
-                                <img src="img/sikakuishiro.png" alt="">
-                            </p>
-                        </div>
+                    <section class="kiiro">
                         <p class="annai"><a href="#"><img src="./img/right-icon.svg" alt=""> リラクゼーションサービス</a></p>
-
                     </section>
 
-                    <section class="hako">
-                        <div class="nakami">
-                            <h3>
-                                その他プラン
-                            </h3>
+                    <section class="kiiro">
 
-                            <p class="setumei">
-                                タワーマンション、中華風の古城での滞在や、オプションとして、バースデーサプライズなども可能です。
-                            </p>
-                            <p class="kadomaru">
-                                <img src="./img/sikaku-goutei.png" alt="">
-                            </p>
-                        </div>
                         <p class="annai"><a href="#"><img src="./img/right-icon.svg" alt=""> 朝食のご案内</a></p>
                     </section>
                 </div>
@@ -227,7 +263,13 @@
                     広めの個室から１棟貸切まで幅広く対応いたします。
                 </p>
 
-                <p class="table"><img src="./img/price.png" alt=""></p>
+                <p class="table">
+                    <picture>
+                        <source media="(max-width: 575px)" srcset="./img/smart-ryokin.png">
+                        <img src="./img/price.png" alt="">
+                    </picture>
+                </p>
+
 
                 <div class="checkin">
                     <p class="checktime">

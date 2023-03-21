@@ -26,6 +26,23 @@ main article h1 {
   }
 }
 
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article h1 {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 0;
+    padding-bottom: 7.17%;
+    background-image: url(../img/smart-leaf-left\ 1.png), url(../img/smart-leaf-right\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right top, left top;
+    background-color: #730909;
+    background-blend-mode: screen, screen;
+    margin-left: 2.7%;
+    margin-right: 2.8%;
+  }
+}
+
 /* div class="plan"の背景画像の設定 */
 main article div.plan {
   background-image: url(../img/PCleaf-left\ 1.png), url(../img/PCleaf-right\ 1.png), url(../img/kusaue.png), url(../img/hidariue.png), url(../img/topmigiue.png), url(../img/kusaue.png);
@@ -48,11 +65,33 @@ main article div.plan {
   main article div.plan {
     background-image: url(../img/smart-leaf-right\ 1.png), url(../img/smart-leaf-left\ 1.png), url(../img/smart-kusaue.png), url(../img/smart-bara2-left.png), url(../img/smart-bara2-right.png), url(../img/smart-kusaue.png);
     background-repeat: no-repeat;
-    background-position: left 50px top 45px, right 50px top 45px, center top 90px, left 0px top 110px, right 0px top 110px, center bottom 40px;
+    background-position: left 50px top 45px, right 50px top 45px, center top 90px, left 0px top 110px, right 0px top 110px, center bottom 25px;
     background-color: #730909;
     background-blend-mode: screen, screen, screen, screen, screen, screen;
     padding-bottom: 40px;
   }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan {
+    background-image: url(../img/smart-kusaue.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 25px;
+    background-color: #730909;
+    background-blend-mode: screen;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ用背景画像 */
+main article div.plan section.sumaho {
+  background-image: url(../img/smart-bara2-left.png), url(../img/smart-bara2-right.png);
+  background-repeat: no-repeat;
+  background-position: left top -10px, right top -10px;
+  background-color: #730909;
+  background-blend-mode: screen, screen;
 }
 
 /* h2の設定 */
@@ -73,8 +112,16 @@ main article div.plan section h2 {
   }
 }
 
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan section h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
 /* h2テキストの設定 */
-main article div.plan section p {
+main article div.plan section p.honbun {
   font-size: 25px;
   line-height: 30px;
   text-align: center;
@@ -83,19 +130,41 @@ main article div.plan section p {
 
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
-  main article div.plan section p {
-    text-align: justify;
+  main article div.plan section p.honbun {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   main article div.plan section p br {
-    display: unset;
+    display: none;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan section p.honbun {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: justify;
   }
 }
 
 /* h3flexbox設定 */
 main article div.plan div.box1 {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 1.25%;
   padding-bottom: 40px;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 {
+    display: unset;
+  }
 }
 
 /* h3アイテム設定 */
@@ -103,13 +172,20 @@ main article div.plan div.box1 section.hako {
   color: black;
   font-size: 20px;
   line-height: 25px;
-  flex: 1;
+  flex-basis: 30%;
+  position: relative;
+}
 
+main article div.plan div.box1 section.kiiro {
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+  flex-basis: 30%;
   position: relative;
 }
 
 /* section class="hako"の設定 */
-main article div.plan div.box1 section.hako div.nakami h3 {
+main article div.plan div.box1 section.hako h3 {
   font-size: 25px;
   line-height: 30px;
   text-align: center;
@@ -121,14 +197,37 @@ main article div.plan div.box1 section.hako div.nakami h3 {
   background-position: center bottom;
 }
 
-/* p class="sen"の設定 */
-main article div.plan div.box1 section.hako div.nakami p.sen {
-  padding-bottom: 0;
-  margin-top: -38px;
+/* スマホ（縦）レスポンシブ */
+main article div.plan div.box1 section.hako h3 {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* div class="nakami"の設定 */
+main article div.plan div.box1 section.hako {
+  padding-bottom: 25px;
+  background-image: url(../img/kabegami.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 section.hako {
+    background-image: url(../img/s-gabegami.png);
+  }
 }
 
 /* p class="setumeiの設定 */
-main article div.plan div.box1 section.hako div.nakami p.setumei {
+main article div.plan div.box1 section.hako p.setumei {
   font-size: 20px;
   line-height: 21px;
   padding-bottom: 22px;
@@ -138,38 +237,111 @@ main article div.plan div.box1 section.hako div.nakami p.setumei {
   height: 132px;
 }
 
-/* 画像サイズ変更 */
-main article div.plan div.box1 section.hako div.nakami p.kadomaru img {
-  object-fit: cover;
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 section.hako p.setumei {
+    text-align: left;
+    padding-bottom: 0;
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 345px;
+  }
 }
 
-/* div class="nakami"の設定 */
-main article div.plan div.box1 section.hako div.nakami {
-  padding-bottom: 25px;
-  background-image: url(../img/kabegami.png);
-  background-repeat: no-repeat;
-  background-position: center top;
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan div.box1 section.hako p.setumei {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+/* テキスト設定 */
+main article div.plan div.box1 section.hako p.kadomaru {
+  text-align: center;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 section.hako p.kadomaru {
+    position: absolute;
+    bottom: 13.2%;
+    left: 34.5%;
+    right: 34.5%;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan div.box1 section.hako p.kadomaru {
+    bottom: 15.2%;
+    left: 23.5%;
+    right: 23.5%;
+  }
+}
+
+main article div.plan div.box1 section.kiiro {
+  position: relative;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 section.kiiro {
+    padding-bottom: 20px;
+  }
 }
 
 /* p class="annai"の設定 */
-main article div.plan div.box1 section.hako p.annai a {
+main article div.plan div.box1 section.kiiro p.annai a {
   background-color: #f9de53;
   font-size: 20px;
   line-height: 67px;
   text-align: center;
   display: block;
-  padding: 24px, 0;
   max-width: 368px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 3px;
 }
 
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  main article div.plan div.box1 section.kiiro p.annai a {
+    font-size: 2.95vw;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan div.box1 section.kiiro p.annai a {
+    font-size: 18px;
+    max-width: 80%;
+  }
+}
+
 /* リンク右向き矢印設定 */
-main article div.plan div.box1 section.hako p.annai a img {
+main article div.plan div.box1 section.kiiro p.annai a img {
   position: absolute;
-  bottom: 25px;
-  left: 10px;
+  bottom: 16%;
+  left: 1%;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article div.plan div.box1 section.kiiro p.annai a img {
+    bottom: 37%;
+    left: 27%;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 575px) {
+  main article div.plan div.box1 section.kiiro p.annai a img {
+    left: 10%;
+  }
 }
 
 /* セクション２のh2の設定 */
@@ -180,6 +352,14 @@ main article section.gray h2.name {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.gray h2.name {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* セクション２のh2の設定 */
@@ -199,10 +379,34 @@ main article section.gray div.cube {
   }
 }
 
+/* スマホ（横）レスポンシブ */
+@media (max-width: 991px) {
+  main article section.gray div.cube {
+    display: unset;
+  }
+  main article section.gray div.cube p.bill {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* section class="gray"の設定 */
 main article section.gray {
   background-color: #c9c9c9;
   margin-bottom: 25px;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.gray {
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+  }
+  main article section.gray div.cube p.bill {
+    padding-bottom: 40px;
+    margin-right: auto;
+  }
 }
 
 /* 四つの画像の設定 */
@@ -214,10 +418,28 @@ main article section.gray div.for {
   padding-bottom: 55px;
 }
 
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.gray div.for {
+    display: unset;
+  }
+}
+
 /* タブレットレスポンシブ */
 @media (max-width: 991px) {
   main article section.gray div.for p.sougou {
+    text-align: center;
     max-width: 50%;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.gray div.for p.sougou {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
   }
 }
 
@@ -231,12 +453,52 @@ main article section.onedan {
   padding-bottom: 155px;
   margin-bottom: 20px;
 }
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.onedan {
+    background-image: url(../img/smart-bara2-left.png), url(../img/smart-bara2-right.png), url(../img/smart-bara2-leftbottom.png), url(../img/smart-bara2-rightbottom.png);
+    background-repeat: no-repeat;
+    background-position: left top 20px, right top 20px, left bottom, right bottom;
+    background-color: #730909;
+    background-blend-mode: screen, screen, screen, screen;
+    padding-bottom: 110px;
+    margin-bottom: 20px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan {
+    margin-bottom: 0;
+  }
+}
+
 /* h2 class="kakaku"設定 */
 main article section.onedan h2.kakaku {
   font-size: 35px;
   line-height: 40px;
   text-align: center;
   padding-bottom: 40px;
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.onedan h2.kakaku {
+    font-size: 30px;
+    line-height: 35px;
+
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan h2.kakaku {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* p class="mini設定 */
@@ -254,12 +516,42 @@ main article section.onedan p.mini {
   }
 }
 
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.onedan p.mini {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 40px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan p.mini {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  main article section.onedan p.mini br {
+    display: none;
+  }
+}
+
 /* p class="table"設定 */
 main article section.onedan p.table {
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan p.table {
+    text-align: center;
+  }
 }
 
 /* div class="checkin"設定 */
@@ -278,6 +570,23 @@ main article section.onedan div.checkin {
   main article section.onedan div.checkin {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+/* スマホ（横）レスポンシブ*/
+@media (max-width: 767px) {
+  main article section.onedan div.checkin br {
+    display: none;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan div.checkin {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: justify;
+    display: unset;
   }
 }
 
@@ -309,7 +618,36 @@ main article section.onedan div.checkin p.amenities span {
   main article section.onedan div.checkin p.setubi {
     flex-basis: 50%;
   }
+  main article section.onedan div.checkin p.setubi br {
+    display: none;
+  }
   main article section.onedan div.checkin p.amenities {
     flex-basis: 50%;
+  }
+  main article section.onedan div.checkin p.amenities br {
+    display: none;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  main article section.onedan div.checkin p.checktime {
+    padding-bottom: 20px;
+  }
+}
+
+/* スマホ（縦）レスポンシブ */
+@media (max-width: 575px) {
+  main article section.onedan div.checkin p.checktime {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main article section.onedan div.checkin p.setubi {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main article section.onedan div.checkin p.amenities {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }

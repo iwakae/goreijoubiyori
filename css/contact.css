@@ -1,0 +1,136 @@
+@import url(common.css);
+
+/* main article背景画像 */
+main article {
+  background-image: url(../img/hidariue.png), url(../img/topmigiue.png), url(../img/hidarisita.png), url(../img/migisita.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom;
+  background-color: #730909;
+  background-blend-mode: screen, screen, screen, screen;
+}
+
+/* h1設定 */
+main article h1 {
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* フォーム説明のテキスト */
+main article p.formtext {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 40px;
+}
+
+/* スタッフからのテキスト */
+main article p.shiyounin {
+  font-size: 25px;
+  line-height: 30px;
+  white-space: nowrap;
+  padding-left: 60%;
+  padding-right: 15%;
+  padding-bottom: 40px;
+}
+
+/* フォーム配置設定 */
+main form {
+  color: black;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* 米印設定 */
+main form tr th span {
+  font-size: 11px;
+  padding-left: 5px;
+}
+
+/* 入力欄の設定 */
+main input[type="text"],
+main input[type="email"],
+main textarea {
+  max-width: 100%;
+  padding: 8px;
+  outline: none;
+}
+
+/* テキストエリア設定 */
+main textarea {
+  height: 12em;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* お問い合わせエリア設定 */
+main tr th:last-child {
+  align-self: flex-start;
+  padding-top: 15px;
+  border-bottom: none;
+}
+
+/* 送信ボタン設定 */
+main form button {
+  font-size: 22px;
+  line-height: 27px;
+  padding: 10px 27px 10px 30px;
+  letter-spacing: 2px;
+  border: 2px solid #e3bf89;
+  background-color: #e29f3b;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/* フォームテーブルタグバージョン */
+/* テーブルタグ */
+table {
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  line-height: 27px;
+  border: 2px solid #e3bf89;
+  border-radius: 5px;
+}
+
+/* 見出しセル */
+th {
+  color: black;
+  background-color: #e29f3b;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 27px;
+  white-space: nowrap;
+  max-width: 270px;
+  border-right: 1px solid #e3bf89;
+  border-bottom: 1px solid #e3bf89;
+  position: relative;
+}
+
+/* お問い合わせ絶対配置 */
+th p.otoiawase {
+  position: absolute;
+  top: 10px;
+}
+
+/* ただのセル */
+td {
+  color: black;
+  background-color: #fef3e3;
+  font-size: 22px;
+  line-height: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 45px;
+  padding-left: 10px;
+  border-right: 1px solid #e3bf89;
+  border-bottom: 1px solid #e3bf89;
+}

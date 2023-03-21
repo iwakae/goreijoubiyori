@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>goreijoubiyori</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="js/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/footerFixed.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body id="top">
+
+
+    <header>
+        <button class="hmenu"><span></span></button>
+
+        <nav class="backcolor">
+            <ul>
+                <li> <a href="index.html"><strong>HOME</strong>御令嬢日和とは</a></li>
+                <li><a href="plan.html"><strong>PLAN</strong>プラン内容</a></li>
+                <li><a href="#"><strong>STAFF</strong>スタッフ</a></li>
+                <li><a href="contact.html"><strong>OPTION</strong>オプション</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="photo coteiner">
+            <h1>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/smart-logo.png">
+                    <img src="img/logo1.png" alt="">
+                </picture>
+            </h1>
+        </div>
+
+        <!-- 予約フォーム -->
+
+        <div class="yoyaku coteiner">
+            <div class="syukuhaku">
+                <p>宿泊予約</p>
+            </div>
+
+            <div class="check">
+                <p>チェックイン</p>
+                <p class="checkin"><select>
+                        <option value="23.03.09">
+                            23.03.09
+                        </option>
+                        <option value="23.03.10">
+                            23.03.10
+                        </option>
+                        <option value="23.03.11">23.03.11</option>
+                    </select></p>
+            </div>
+
+            <div class="check">
+                <p>宿泊数</p>
+                <p class="checkin"><select name="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    泊</p>
+            </div>
+
+            <div class="check">
+                <p>人数</p>
+                <p class="checkin"><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    人</p>
+            </div>
+
+            <div class="check">
+                <p>部屋数</p>
+                <p class="checkin"><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+
+                    </select>
+                    部屋</p>
+            </div>
+
+            <div class="kensaku">
+                <p>検索</p>
+            </div>
+
+            <div class="itiran">
+                <p class="kakunin">予約確認・取消</p>
+                <p class="pranitiran">宿泊プラン一覧</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="coteiner">
+        <article>
+
+            <h1>FORM</h1>
+            <p class="formtext">
+                お屋敷のご滞在について何か気になることが
+                ございましたら、こちらを通してお問い合わせください。<br>
+                催し物などが重なっている場合など、
+                返信が困難な時がございます。精一杯対応致しますが、
+                何卒ご容赦ください。<br>
+                お嬢様方のご来訪、ご滞在を心よりお待ちしております。
+            </p>
+
+            <p class="shiyounin">「御令嬢日和」使用人一同</p>
+
+
+            <form action="#" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>お問い合わせ<span>※</span></th>
+
+                            <td>
+                                <select>
+                                    <option value="選択してください">選択してください</option>
+                                    <option value="ご予約について">ご予約について</option>
+                                    <option value="ご見学について">ご見学について</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>御名前　（漢字）<span>※</span></th>
+                            <td><input type="text" placeholder="お嬢様ですわ" required></td>
+                        </tr>
+
+                        <tr>
+                            <th>御名前　（フリガナ）</th>
+                            <td>
+                                <input type="text" placeholder="オジョウサマ" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>メールアドレス<span>※</span></th>
+                            <td>
+                                <input type="email" placeholder="form@gmail.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                メールアドレス<span>※</span><br>
+                                （確認用）
+                            </th>
+                            <td>
+                                <input type="email" placeholder="form@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p class="otoiawase">お問い合わせ内容</p>
+                            </th>
+                            <td><textarea></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><button>内容のご確認</button></p>
+            </form>
+
+        </article>
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="juusyo">
+            <address>〒333-3333<br>
+                東京都御令嬢区○○ー○○<br>
+                reijou.co.jp
+            </address>
+            <p class="tyosakukenn"><small>@sutajiojou.inc</small></p>
+            <p class="pagetop"><a href="#top"><img src="img/5pagetop.svg" alt=""></a></p>
+        </div>
+
+    </footer>
+    <script src="js/lightbox/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

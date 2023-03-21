@@ -96,19 +96,13 @@ header nav {
 }
 /* ヘッダー部分にコンテナ幅は設定してないので、navの背景色はめいいっぱい広がり、色がつく */
 
-@media (max-width: 991px) {
-  header nav {
-    height: 120px;
-  }
-}
-
 /* ヘッダー部分の構成 */
 header nav ul {
   text-align: center;
   padding: 29px 0 45px;
   font-size: 35px;
-  padding-top: 29px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   max-width: 765px;
   margin-left: auto;
   margin-right: auto;
@@ -136,34 +130,27 @@ header nav ul {
 
 /* メニューリストふりがなの設定 */
 header nav ul li {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 22px;
 }
 
 /* メニューリストのストロングタグのテキストの設定 */
 header nav strong {
   display: block;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 30px;
 }
 
-/* タブレットレスポンシブ */
-@media (max-width: 991px) {
-  header nav strong {
-    font-size: 30px;
-    line-height: 35px;
-  }
+/* メニューリストホバー前 */
+header nav li a {
+  transition: 0.5s;
 }
 
 /* メニューリストホバー時の設定 */
 header nav li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   opacity: 0.7;
-}
-
-/* class="active"の設定 */
-header nav ul li a.active {
-  font-weight: bold;
+  transition: 0.5s;
 }
 
 /* レスポンシブ(タブレット)ヘッダー上は表示させないのとロゴの位置変更 */
@@ -215,10 +202,10 @@ header h1 {
 /* 宿泊予約ボタン外枠 */
 header div.yoyaku {
   color: #000;
-
   line-height: 30px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: rgb(240, 212, 70);
   background: linear-gradient(90deg, rgba(240, 212, 70, 1) 0%, rgba(244, 223, 115, 1) 11%, rgba(253, 233, 134, 1) 17%, rgba(255, 246, 158, 1) 21%, rgba(255, 247, 172, 1) 24%, rgba(255, 249, 193, 1) 28%, rgba(255, 247, 172, 1) 34%, rgba(242, 214, 74, 1) 50%, rgba(233, 200, 41, 1) 75%, rgba(220, 187, 24, 1) 100%);
   border: 5px solid #ebad37;
@@ -229,7 +216,6 @@ header div.yoyaku {
 /* テキスト宿泊予約 */
 header div.yoyaku div.syukuhaku {
   font-size: 30px;
-
   padding-right: 3.14%;
   padding-left: 3.14%;
   padding-top: 39px;
@@ -266,7 +252,7 @@ header div.yoyaku div.check p.checkin {
   border: 2px solid #000;
   border-radius: 5px;
   padding-left: 3%;
-  padding-right: 1%;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -276,8 +262,17 @@ header div.yoyaku div.kensaku {
   background-color: #000;
   color: #fff;
   padding: 11px 26px;
+  margin-left: 2.49%;
   margin-right: 3.49%;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+/* 検索リンクホバーafter */
+header div.yoyaku div.kensaku:hover {
+  background-color: #000000d8;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 /* 矢印の画像 */
@@ -305,10 +300,20 @@ header div.yoyaku div.itiran p.kakunin {
   border: 1px solid #cb9836;
   padding: 7px 9px 8px;
   margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 header div.yoyaku div.itiran p.pranitiran {
   border: 1px solid #cb9836;
-  padding: 7px 9px 8px;
+  padding: 5%;
+  cursor: pointer;
+}
+
+header div.yoyaku div.itiran p.kakunin:hover,
+header div.yoyaku div.itiran p.pranitiran:hover {
+  background-color: #c7a666ba;
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 /* タブレットレスポンシブ */
@@ -365,7 +370,7 @@ footer div.juusyo {
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
   footer {
-    margin-top: 40px;
+    margin-top: 35px;
   }
   footer div.juusyo {
     padding-left: 2.8%;
@@ -379,6 +384,20 @@ footer p.pagetop {
   right: 12px;
   bottom: 9px;
   display: none;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  footer p.pagetop {
+    width: 68px;
+  }
+}
+
+/* スマホ（横）レスポンシブ */
+@media (max-width: 767px) {
+  footer p.pagetop {
+    width: 58px;
+  }
 }
 
 /* マテリアルアイコンの絶対配置 */

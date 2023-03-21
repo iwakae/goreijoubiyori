@@ -2,12 +2,13 @@
 
 /* ｈ２（背景画像＋縦書き） */
 main section h2.anata {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
   writing-mode: vertical-rl;
   text-align: left;
   padding-top: 47px;
   padding-left: 283px;
-  padding-bottom: 125px;
+  padding-bottom: 90px;
   margin-top: 53px;
 }
 /* ｈ２全体を文字を縦書きに設定して、左ぞろえにしたうえに、内側上下左余白をつける */
@@ -81,16 +82,16 @@ main section.fancy {
 /* メインセクションの概要テキスト */
 main section div.gaiyou {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   padding-bottom: 15px;
 }
 
 /* メインセクションpタグの強調文字 */
-main section p.gaiyou strong {
-  font-size: 23px;
-  line-height: 23px;
+main section div.gaiyou strong {
+  font-size: 25px;
+  line-height: 30px;
 }
 
 /* スマホ(横)レスポンシブ */
@@ -139,6 +140,7 @@ main section h2 {
 
 /* h2 class="kusa"設定 */
 main section h2.kusa {
+  font-weight: 400;
   background-image: url(../img/PCleaf-left\ 1.png), url(../img/PCleaf-right\ 1.png);
   white-space: nowrap;
   background-repeat: no-repeat;
@@ -202,6 +204,7 @@ main section h2.kusa {
 /* メインセクションｈ３ */
 main section.pickup h3 {
   font-size: 35px;
+  font-weight: 400;
   line-height: 40px;
   padding-bottom: 66px;
 }
@@ -231,6 +234,11 @@ main section.pickup div.ivent p.itiran {
 }
 
 /* ｈ３画像余白 */
+main section div.ivent p.aiilust img {
+  background-image: url();
+}
+
+/* h３不透明白の背景画像 */
 main section div.ivent p.aiilust {
   padding-bottom: 68px;
 }
@@ -365,6 +373,15 @@ main section.pickup div.pikku div.ivent div.ue p.itiran {
   position: absolute;
   top: 0;
   right: 55px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* 一覧ボタンホバー後 */
+main section.pickup div.pikku div.ivent div.ue p.itiran:hover {
+  color: #c1adad;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 /* スマホ（横）レスポンシブ */
@@ -655,7 +672,7 @@ main section.mansion {
 /* スマホ（縦）レスポンシブ */
 @media (max-width: 575px) {
   main section.mansion {
-    padding-bottom: 115px;
+    padding-bottom: 90px;
   }
 }
 
