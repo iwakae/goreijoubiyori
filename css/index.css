@@ -741,14 +741,6 @@ main section p.oshiro {
   padding-bottom: 40px;
 }
 
-/* タブレットレスポンシブ */
-@media (max-width: 991px) {
-  main section p.oshiro {
-    /* padding-left: 20%;
-    padding-right: 20%; */
-  }
-}
-
 /* スマホ（横）レスポンシブ */
 /* フォントサイズ、行間の変更・文章の左右余白の減少・ｂｒタグの解除 */
 @media (max-width: 767px) {
