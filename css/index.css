@@ -62,7 +62,7 @@ main section.fancy {
   main section.fancy {
     background-image: url(../img/hidariue.png), url(../img/ishinageport\ 1.jpg), url(../img/topmigiue.png);
     background-repeat: no-repeat;
-    background-position: left top, center top 260px, right top;
+    background-position: left top, center top 290px, right top;
     background-color: #730909;
     background-blend-mode: screen, normal, screen;
     padding-bottom: 50%;
@@ -575,6 +575,9 @@ main section.about div.naiyou p.kobun {
     text-align: justify;
     padding-bottom: 50px;
   }
+  /* main section.about div.naiyou p.kobun br {
+    display: none;
+  } */
 }
 
 /* スマホ（縦）レスポンシブ */
