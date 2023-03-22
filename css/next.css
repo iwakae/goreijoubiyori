@@ -200,6 +200,7 @@ main article div.plan div.box1 section.hako h3 {
 /* スマホ（縦）レスポンシブ */
 main article div.plan div.box1 section.hako h3 {
   font-size: 20px;
+  font-weight: 600;
   line-height: 25px;
   text-align: center;
   padding-top: 11px;
@@ -229,6 +230,7 @@ main article div.plan div.box1 section.hako {
 /* p class="setumeiの設定 */
 main article div.plan div.box1 section.hako p.setumei {
   font-size: 20px;
+  font-weight: 400;
   line-height: 21px;
   padding-bottom: 22px;
   text-align: justify;
@@ -298,6 +300,7 @@ main article div.plan div.box1 section.kiiro {
 main article div.plan div.box1 section.kiiro p.annai a {
   background-color: #f9de53;
   font-size: 20px;
+  font-weight: 200;
   line-height: 67px;
   text-align: center;
   display: block;

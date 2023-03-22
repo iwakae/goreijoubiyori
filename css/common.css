@@ -9,6 +9,7 @@
 body {
   color: white;
   background-color: #730909;
+  font-size: 16px;
   font-family: "Noto Serif JP", serif;
   font-weight: 200;
 }
@@ -204,18 +205,26 @@ header div.yoyaku {
   color: #000;
   line-height: 30px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   background: rgb(240, 212, 70);
   background: linear-gradient(90deg, rgba(240, 212, 70, 1) 0%, rgba(244, 223, 115, 1) 11%, rgba(253, 233, 134, 1) 17%, rgba(255, 246, 158, 1) 21%, rgba(255, 247, 172, 1) 24%, rgba(255, 249, 193, 1) 28%, rgba(255, 247, 172, 1) 34%, rgba(242, 214, 74, 1) 50%, rgba(233, 200, 41, 1) 75%, rgba(220, 187, 24, 1) 100%);
   border: 5px solid #ebad37;
   border-radius: 5px;
   margin-bottom: 52px;
+  max-width: 1140px;
+  position: relative;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  header div.yoyaku {
+    font-size: 1.73vw;
+  }
 }
 
 /* テキスト宿泊予約 */
 header div.yoyaku div.syukuhaku {
-  font-size: 30px;
   padding-right: 2.14%;
   padding-left: 2.14%;
   padding-top: 39px;
@@ -223,10 +232,10 @@ header div.yoyaku div.syukuhaku {
   white-space: nowrap;
 }
 
-/* フォントサイズ変更 */
-@media (min-width: 768px) {
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
   header div.yoyaku div.syukuhaku {
-    font-size: 2.28vw;
+    font-size: 140%;
   }
 }
 
@@ -239,10 +248,10 @@ header div.yoyaku div.check {
   white-space: nowrap;
 }
 
-/* フォントサイズ変更 */
-@media (min-width: 768px) {
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
   header div.yoyaku div.check {
-    font-size: 2.02vw;
+    font-size: 120%;
   }
 }
 
@@ -259,11 +268,12 @@ header div.yoyaku div.check p.checkin {
 
 /* 検索ボタン */
 header div.yoyaku div.kensaku {
+  font-size: 125%;
   background-color: #000;
   color: #fff;
   padding: 11px 26px;
-  margin-left: 2.49%;
-  margin-right: 3.49%;
+  margin-left: 1.45%;
+  margin-right: 2.65%;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -282,10 +292,16 @@ header div.yoyaku div.check p.checkin img {
 
 /* 予約確認・宿泊プラン一覧 */
 header div.yoyaku div.itiran {
-  font-size: 1.95vw;
+  font-size: 115%;
   line-height: 25px;
-  margin-right: 44px;
   white-space: nowrap;
+}
+
+/* タブレットレスポンシブ */
+@media (max-width: 991px) {
+  header div.yoyaku div.itiran {
+    margin-right: 3%;
+  }
 }
 
 header div.yoyaku div.itiran p.kakunin,
@@ -293,7 +309,6 @@ header div.yoyaku div.itiran p.pranitiran {
   border: 1px solid #cb9836;
   padding: 7px 9px 8px;
   margin-bottom: 5px;
-
   cursor: pointer;
   transition: 0.5s;
 }
