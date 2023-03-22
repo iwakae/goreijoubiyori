@@ -3,6 +3,7 @@
 /* h1設定 */
 main article h1 {
   font-size: 40px;
+  font-weight: 600;
   line-height: 40px;
   text-align: center;
   padding-bottom: 172px;
@@ -21,7 +22,7 @@ main article h1 {
   main article h1 {
     font-size: 30px;
     line-height: 35px;
-    padding-top: 7.17%;
+    padding-top: 6.17%;
     padding-bottom: 7.17%;
   }
 }
@@ -86,17 +87,20 @@ main article div.plan {
 }
 
 /* スマホ（縦）レスポンシブ用背景画像 */
-main article div.plan section.sumaho {
-  background-image: url(../img/smart-bara2-left.png), url(../img/smart-bara2-right.png);
-  background-repeat: no-repeat;
-  background-position: left top -10px, right top -10px;
-  background-color: #730909;
-  background-blend-mode: screen, screen;
+@media (max-width: 575px) {
+  main article div.plan section.sumaho {
+    background-image: url(../img/smart-bara2-left.png), url(../img/smart-bara2-right.png);
+    background-repeat: no-repeat;
+    background-position: left top -10px, right top -10px;
+    background-color: #730909;
+    background-blend-mode: screen, screen;
+  }
 }
 
 /* h2の設定 */
 main article div.plan section h2 {
   font-size: 35px;
+  font-weight: 400;
   line-height: 40px;
   text-align: center;
   padding-bottom: 60px;

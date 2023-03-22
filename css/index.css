@@ -247,7 +247,11 @@ main section div.ivent p.aiilust {
 /* スマホ（縦）レスポンシブ */
 @media (max-width: 575px) {
   main section div.ivent p.aiilust {
+    text-align: center;
     padding-bottom: 35px;
+    max-width: 488px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -283,7 +287,7 @@ main section.pickup div.ivent p.puran {
     padding-bottom: 0px;
   }
   main section.pickup div.pikku div.ivent p.aiilust {
-    width: 488px;
+    max-width: 488px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -501,8 +505,9 @@ main section.about p.set {
 /* スマホ（横）レスポンシブ */
 @media (max-width: 767px) {
   main section.about p.set {
-    font-size: 20px;
-    line-height: 25px;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 15%;
   }
 }
 
@@ -743,6 +748,7 @@ main section p.oshiro {
   font-size: 25px;
   line-height: 30px;
   text-align: center;
+
   padding-bottom: 40px;
 }
 
@@ -752,6 +758,7 @@ main section p.oshiro {
   main section p.oshiro {
     font-size: 20px;
     line-height: 25px;
+    text-align: left;
     padding-left: 10.5%;
     padding-right: 10.5%;
   }
