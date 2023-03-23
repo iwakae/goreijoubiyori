@@ -151,6 +151,7 @@ header nav li a {
 header nav li a:hover {
   text-decoration: none;
   opacity: 0.7;
+
   transition: 0.5s;
 }
 
